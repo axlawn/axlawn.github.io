@@ -1,4 +1,6 @@
-theme: jekyll-theme-minimal
-title: Muhammad Arslan
-description: Bookmark this to keep an eye on my project updates!
-exclude: [README.md]
+theme: none
+
+# Prevent Jekyll from ignoring critical project files and folders
+exclude:
+  - README.md
+  - .gitignore
