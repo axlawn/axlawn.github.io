@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>axlawn Portfolio Hub</title>
-    <!-- Relative paths work securely with lowercase structural setup -->
+    <title>axlawn // Developer Core & Scraping Sandbox</title>
     <link rel="stylesheet" href="css/main-theme.css">
 </head>
 <body>
@@ -13,34 +12,38 @@
         <h1>axlawn // Developer Core</h1>
         <nav>
             <button class="active" data-view="dashboard">DASHBOARD</button>
-            <button data-view="scraper">SCRAPER SANDBOX</button>
+            <button data-view="simulator">TERMINAL SIMULATOR</button>
+            <button data-view="target-arena">SCRAPING TARGET ARENA</button>
         </nav>
     </header>
 
     <main>
-        <!-- SPA SECTION 1: DASHBOARD DISPLAY -->
+        <!-- VIEW 1: PORTFOLIO DASHBOARD -->
         <section id="dashboard-view" class="view-section active">
             <h2>System Overview Portfolio</h2>
-            <p style="margin-bottom: 1.5rem; color: #aaa;">Welcome to the dashboard. Select interactive sandboxes using the terminal menu above.</p>
+            <p style="margin-bottom: 1.5rem; color: #aaa;">Welcome to my sandbox portfolio. Use the navigation menu to switch between live simulations and raw data scraping targets.</p>
             
             <div class="dashboard-grid">
                 <div class="card">
                     <h3>Web Scraping Sandbox</h3>
-                    <p>Features programmatic data extraction workflows targeting sandboxed environments.</p>
+                    <p>An interactive, multi-layered frontend environment designed to test data parsing, structural DOM selection, and automation logic.</p>
                 </div>
                 <div class="card">
                     <h3>Architecture Stack</h3>
-                    <p>Engineered using pure Semantic HTML5, CSS Variable Systems, Custom Vanillajs Router execution profiles.</p>
+                    <p>Engineered using Semantic HTML5, CSS Grid/Flexbox Systems, and a custom native Vanilla JavaScript router layout.</p>
+                </div>
+                <div class="card">
+                    <h3>Skill Cultivation</h3>
+                    <p>Built deliberately complex to provide target schemas for BeautifulSoup, Scrapy, and Selenium testing suites.</p>
                 </div>
             </div>
         </section>
 
-        <!-- SPA SECTION 2: INTERACTIVE SCRAPER MODULE -->
-        <section id="scraper-view" class="view-section">
-            <h2>Web Scraping Engine Core Sandbox</h2>
-            <p style="color: #aaa;">Simulate execution loops interacting with isolated parsing target profiles.</p>
+        <!-- VIEW 2: TERMINAL INTERACTIVE SIMULATOR -->
+        <section id="simulator-view" class="view-section">
+            <h2>Automation Simulation Matrix</h2>
+            <p style="color: #aaa; margin-bottom: 1rem;">Simulate execution loops interacting with isolated parsing target profiles.</p>
 
-            <!-- Simulator UI Component Shell Matrix -->
             <div class="terminal-window">
                 <div class="terminal-header">
                     <div class="terminal-buttons">
@@ -48,7 +51,7 @@
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
                     </div>
-                    <div class="terminal-title">bs4_parser.py - Terminal Engine</div>
+                    <div class="terminal-title">live_scraper.py - Terminal Engine</div>
                     <div></div>
                 </div>
                 
@@ -61,10 +64,82 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Custom App Execution Architecture scripts -->
-    <script src="js/app-router.js"></script>
-    <script src="js/dynamic-scraper-ui.js"></script>
-</body>
-</html>
+        <!-- VIEW 3: THE SCRAPING TARGET ARENA (MASSIVE PRACTICE AREA) -->
+        <section id="target-arena-view" class="view-section">
+            <h2>The Live Scraping Target Arena</h2>
+            <p style="color: #aaa; margin-bottom: 2rem;">This view contains deliberately diverse, complex HTML structures. Target this live URL with your Python scripts to practice real-world web scraping techniques.</p>
+
+            <!-- CHALLENGE 1: Standard E-Commerce Product Cards -->
+            <div class="arena-block" style="background: #121217; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem; border: 1px dashed #333;">
+                <h3 style="color: #00ff66; margin-bottom: 1rem;">Challenge Level 1: E-Commerce Product Grid</h3>
+                <div class="dashboard-grid" id="product-container">
+                    
+                    <div class="product-card" data-pid="1001" style="background:#16161a; padding:1rem; border-radius:4px; position:relative;">
+                        <span class="badge" style="position:absolute; top:5px; right:5px; background:#ff5f56; font-size:0.7rem; padding:2px 5px; color:#fff;">HOT</span>
+                        <h4 class="product-title" style="color:#fff;">Cyberpunk Neon Mechanical Keyboard</h4>
+                        <p class="product-sku" style="font-size:0.75rem; color:#666;">SKU: TECH-8821</p>
+                        <p class="product-description" style="font-size:0.9rem; margin:0.5rem 0; color:#bbb;">RGB tactile switches with fully customizable dynamic cyber glow matrix profiles.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem;">
+                            <span class="product-price" style="color:#00ffcc; font-weight:bold;">$129.99</span>
+                            <span class="stock-status" data-instock="true" style="color:#27c93f; font-size:0.85rem;">✔ In Stock</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-pid="1002" style="background:#16161a; padding:1rem; border-radius:4px; position:relative;">
+                        <h4 class="product-title" style="color:#fff;">Retro Matrix HUD Sunglasses</h4>
+                        <p class="product-sku" style="font-size:0.75rem; color:#666;">SKU: GEAR-0941</p>
+                        <p class="product-description" style="font-size:0.9rem; margin:0.5rem 0; color:#bbb;">Polarized dark lenses featuring an integrated green overlay head-up data display display panels.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem;">
+                            <span class="product-price" style="color:#00ffcc; font-weight:bold;">$45.00</span>
+                            <span class="stock-status" data-instock="false" style="color:#ff5f56; font-size:0.85rem;">✖ Out of Stock</span>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-pid="1003" style="background:#16161a; padding:1rem; border-radius:4px; position:relative;">
+                        <h4 class="product-title" style="color:#fff;">Neural Link Developer Suite v2</h4>
+                        <p class="product-sku" style="font-size:0.75rem; color:#666;">SKU: BIO-7729</p>
+                        <p class="product-description" style="font-size:0.9rem; margin:0.5rem 0; color:#bbb;">Direct hardware cortex node receiver setup for mental software execution pipelines.</p>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1rem;">
+                            <span class="product-price" style="color:#00ffcc; font-weight:bold;">$899.00</span>
+                            <span class="stock-status" data-instock="true" style="color:#ffbd2e; font-size:0.85rem;">⚠ Low Stock</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CHALLENGE 2: Tabular Financial/System Logs Data -->
+            <div class="arena-block" style="background: #121217; padding: 1.5rem; border-radius: 6px; margin-bottom: 2rem; border: 1px dashed #333;">
+                <h3 style="color: #00ff66; margin-bottom: 1rem;">Challenge Level 2: Nested Data Tables & Attribute Extraction</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;" id="crypto-data-table">
+                        <thead>
+                            <tr style="border-bottom: 2px solid #333; color: #00ffcc;">
+                                <th style="padding: 0.5rem;">Node ID</th>
+                                <th style="padding: 0.5rem;">Core Asset</th>
+                                <th style="padding: 0.5rem;">Net Hashrate</th>
+                                <th style="padding: 0.5rem;">Market Efficiency</th>
+                                <th style="padding: 0.5rem;">Security Index Hash</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #222;" class="table-row-data">
+                                <td style="padding: 0.75rem; font-family: monospace;">#08A-9</td>
+                                <td style="padding: 0.75rem; font-weight: bold;">NEON-Coin (NNC)</td>
+                                <td style="padding: 0.75rem;">14,204 TH/s</td>
+                                <td style="padding: 0.75rem; color: #27c93f;">+12.4%</td>
+                                <td style="padding: 0.75rem; font-family: monospace; color: #666;" data-secure-hash="a8f9c2d10ebb">Hover to inspect hidden attribute data</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #222;" class="table-row-data">
+                                <td style="padding: 0.75rem; font-family: monospace;">#12D-3</td>
+                                <td style="padding: 0.75rem; font-weight: bold;">ZION-Credits (ZCR)</td>
+                                <td style="padding: 0.75rem;">842 TH/s</td>
+                                <td style="padding: 0.75rem; color: #ff5f56;">-4.1%</td>
+                                <td style="padding: 0.75rem; font-family: monospace; color: #666;" data-secure-hash="7f3c11b020ee">Hover to inspect hidden attribute data</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #222;" class="table-row-data">
+                                <td style="padding: 0.75rem; font-family: monospace;">#99X-7</td>
+                                <td style="padding: 0.75rem; font-weight: bold;">GLITCH Ether (GETH)</td>
+                                <td style="padding: 0.75rem;">9,411 TH/s</td>
+                                <td style="padding: 0.75rem; color: #ffbd2e;">0.00%</td>
