@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axlawn Portfolio Hub</title>
+    <!-- Relative paths work securely with lowercase structural setup -->
+    <link rel="stylesheet" href="css/main-theme.css">
+</head>
+<body>
 
+    <header>
+        <h1>axlawn // Developer Core</h1>
+        <nav>
+            <button class="active" data-view="dashboard">DASHBOARD</button>
+            <button data-view="scraper">SCRAPER SANDBOX</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SPA SECTION 1: DASHBOARD DISPLAY -->
+        <section id="dashboard-view" class="view-section active">
+            <h2>System Overview Portfolio</h2>
+            <p style="margin-bottom: 1.5rem; color: #aaa;">Welcome to the dashboard. Select interactive sandboxes using the terminal menu above.</p>
+            
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Web Scraping Sandbox</h3>
+                    <p>Features programmatic data extraction workflows targeting sandboxed environments.</p>
+                </div>
+                <div class="card">
+                    <h3>Architecture Stack</h3>
+                    <p>Engineered using pure Semantic HTML5, CSS Variable Systems, Custom Vanillajs Router execution profiles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPA SECTION 2: INTERACTIVE SCRAPER MODULE -->
+        <section id="scraper-view" class="view-section">
+            <h2>Web Scraping Engine Core Sandbox</h2>
+            <p style="color: #aaa;">Simulate execution loops interacting with isolated parsing target profiles.</p>
+
+            <!-- Simulator UI Component Shell Matrix -->
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">bs4_parser.py - Terminal Engine</div>
+                    <div></div>
+                </div>
+                
+                <div class="terminal-body" id="terminal-output">
+                    <p>axlawn@github-engine:~$ Click 'RUN SCRAPER' below to execute automation hooks... <span class="cursor"></span></p>
+                </div>
+
+                <div class="terminal-controls">
+                    <button class="btn-trigger" id="run-scraper-btn">RUN SCRAPER</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom App Execution Architecture scripts -->
+    <script src="js/app-router.js"></script>
+    <script src="js/dynamic-scraper-ui.js"></script>
+</body>
+</html>
